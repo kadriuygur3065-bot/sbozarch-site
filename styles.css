@@ -1,0 +1,251 @@
+/* GENEL AYARLAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+/* NAVBAR */
+header {
+    background-color: #1b365d;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1.2rem 2rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    color: #c5a059; /* Lüks bronz/altın tonu */
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #c5a059;
+}
+
+/* HERO (KAPAK) BÖLÜMÜ - Mermer/Mavi Esintili Tasarım */
+.hero {
+    height: 75vh;
+    background: linear-gradient(135deg, #162a45, #2b4c7e);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 1rem;
+    border-bottom: 5px solid #c5a059;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 3px;
+    color: #ffffff;
+}
+
+.hero .tagline {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #c5a059;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.hero .sub-tagline {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    opacity: 0.85;
+    font-style: italic;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.9rem 2.2rem;
+    background-color: #c5a059;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+}
+
+.btn:hover {
+    background-color: #b08d46;
+    transform: translateY(-2px);
+}
+
+/* HİZMETLER VE FİYATLAR BÖLÜMÜ */
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.3rem;
+    color: #162a45;
+    margin-bottom: 0.5rem;
+}
+
+.section-desc {
+    color: #666;
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+/* FİYAT KARTLARI IZGARASI */
+.price-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-content: center;
+}
+
+.price-card {
+    background: #ffffff;
+    padding: 2.5rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+    border-top: 4px solid #162a45;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.price-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.1);
+}
+
+.price-card.featured {
+    border-top: 4px solid #c5a059;
+    background: linear-gradient(to bottom, #ffffff, #fdfbf7);
+}
+
+.badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: #c5a059;
+    color: white;
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.price-card h3 {
+    font-size: 1.2rem;
+    color: #162a45;
+    margin-bottom: 0.8rem;
+}
+
+.service-desc {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    min-height: 45px;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #162a45;
+    margin-bottom: 0.2rem;
+}
+
+.price.special {
+    font-size: 1.6rem;
+    color: #c5a059;
+}
+
+.price-note {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+/* FOOTER */
+footer {
+    background-color: #111d2e;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+    border-top: 3px solid #c5a059;
+}
+
+.footer-content h2 {
+    color: white;
+    margin-bottom: 0.5rem;
+}
+
+.footer-content p {
+    color: #aaa;
+    margin-bottom: 1.5rem;
+}
+
+.contact-info {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info p {
+    margin: 0.5rem 0;
+}
+
+.contact-info a {
+    color: #c5a059;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    font-size: 0.85rem;
+    color: #777;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    padding-top: 1.5rem;
+    margin-top: 2rem;
+}
